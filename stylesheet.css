@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+} 
+body{
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}   
+
+.navbar{
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    background: #024B8F;
+}
+.logo{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul{
+
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    
+    display: inline-block;
+    padding: 20px;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.col{
+    background-image: url('https://concordkolkata.com/washingmachine/wp-content/uploads/sites/4/2020/04/intex-washing-machine-1.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    width: 100%;
+}
+
+.content{
+    color: #024B8F;
+    padding-top: 130px;
+    height: 230px;
+    padding-left: 10%;
+
+}
+.content p{
+    max-width: 400px;
+}
+.title{
+    font-weight: 800px;
+    font-size: 3rem;
+    padding-bottom: 0.3rem;
+
+}
+.buttons{
+   padding-top: 20px;
+
+}
+.call{
+    background: #024B8F;
+    cursor: pointer;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-left: 10%;
+    color: white;
+    height: 30px;
+    width: 180px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.call:hover{
+    background: #e6e0e0cc;
+}
+
+.title1{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #024B8F 
+}
+.page1{
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    padding-bottom: 0px;
+    color: #024B8F;
+}
+
+.welcome p{
+    padding-top: 30px;
+}
+.container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+}
+
+.row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+} 
+
+.about{
+    margin-top:50px;
+    max-width: 1200px;
+
+    
+}
+
+.col-2{
+    flex: 40%;
+    padding: 10px 10px;
+    min-width:300px ;
+    margin-top: 0px;
+
+}
+.col-2 img{
+    width: 100%;
+    padding: 20px 0;
+
+}
+.col-2 p{
+    padding-top: 0;
+    margin-left: 50px;
+    color: #024B8F;
+
+}
+
+.about-title{
+    padding-top: 50px;
+    line-height: 60px;
+    position: relative;
+
+}
+
+.about-title::after{
+    content: '';
+    background: #024B8F;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px;
+    transform: translateX(-70%);
+}
+
+.small-container{
+    min-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex: 25%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+.col-4 img{
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+}
+
+/* ----------------------testimonial------------------ */
+
+
+.testimonial-title{
+    position: relative;
+    line-height: 60px;
+}
+.testimonial-title::after{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    bottom: 0px;
+    border-radius: 25px;
+    background: #024B8F;
+    transform: translateX(-120px);
+}
+
+.col-form {
+    width: 40%;
+    margin: 20px;
+}
+
+.para-1{
+    color: #ffffff;
+    font-family:"Roboto Slab", Sans-serif;
+    top:0 ;
+}
+.para-2{
+    margin-top: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+
+}
+.form-text{
+    margin-top: 0px;
+}
+.form-call .call{
+    margin-top: 1rem;
+    color: #024B8F;
+    background: #ffffff;
+   
+
+}
+.col-form input[type=text],[type=number],[type=email]{
+    width: 100%;
+    height: 40px;
+    margin: 20px;
+}
+textarea{
+    width: 100%;
+    margin: 20px;
+
+}
+
+input[type=submit]{
+    padding-bottom: 35px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.submit{
+    
+    height: 30px;
+    margin: 20px;
+    font-size: 15pt;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    list-style: none;
+    color: #024B8F;
+    background: #ffffff;
+    
+}
+
+ 
+input::-webkit-input-placeholder{
+    font-size: 15pt;
+    padding-left: 10px;
+}
+
+textarea::-webkit-input-placeholder{
+    font-size: 15pt;
+    padding-left: 10px;
+}
+
+
+
+.h1-form{
+    padding: 50px 50px;
+    text-align: center;
+    color: white;
+}
+
+/* ---------------------------------------------brand-------------------------------------------------- */
+.col-5{
+    width: 150px;    
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+}
+.col-5 p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: 800px;
+}
+
+
+/* -------------------------------------------foooter------------------------------------------------------- */
+
+.footer-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-dec{
+    color: #ffffff;
+    font-weight: 600px;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer hr{
+    width: 100%;
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+}
+.copyright{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.menu-icon{
+    width: 28px;
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 30px;
+    display: none;
+}
+.fixed-call-div{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #024B8F;
+    color: #ffffff;
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.fixed-call-div:hover{
+    background: #e6e0e0cc;
+}
+
+/* ---------------------------------------- mobile-divece--------------------------------------- */
+@media only screen and (max-width:600px) {
+    .small-container{
+        min-width: 300px;
+    }
+    .col-form{
+        width: 100%;
+    }
+    .row{
+        max-width: 300px;
+    }
+    .container{
+        max-width: 300px;
+    }
+    .content{
+        max-width: 300px;
+        padding-top: 5px;
+    }
+ /* -------------------------------------------menu icon----------------------------------------------------------- */
+ @media only screen and (max-width:800px){
+     nav ul{
+         position: absolute;
+         width: 100%;
+         top:70px;
+         background: #111;
+         overflow: hidden;
+         left: 0;
+         transition: 0.5s;
+
+
+     }
+nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+
+}
+     nav ul li a{
+         color: #ffffff;
+     }
+     .menu-icon{
+         display: block;
+         cursor: pointer;
+     }
+ }  
+   
+    
+    
+}

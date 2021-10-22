@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -29,7 +29,7 @@
                 <li> <a href="#header">home</a> </li>
                 <li><a href="#contact">contact</a></li>
 
-                
+
 
             </ul>
         </nav>
@@ -75,12 +75,12 @@
     </div>
 
     <!-- -------------------------------about --------------------------- -->
-    <div class="bg-color" style="background:#f9f9f9 ;">
+    <div class="bg-color" style="border-radius:20px ;  border-radius: 10px;margin-top: 5px; box-shadow: 5px 10px 18px #888888;">
         <div class="container">
             <h2 class="about-title">About</h2>
             <div class="row">
                 <div class="col-2">
-                    <img src="images/about.jpg" alt="">
+                    <img src="images/about.jpg" class="image-round" alt="">
                 </div>
                 <div class="col-2">
                     <p>
@@ -106,16 +106,16 @@
         <h2 class="testimonial-title">testimonial</h2>
         <div class="row">
             <div class="col-4">
-                <img src="images/image-2.jpg" alt="images-2">
+                <img src="images/image-2.jpg" class='image-round-portfolio' alt="images-2">
             </div>
             <div class="col-4">
-                <img src="images/image-3.jpg" alt="images-3">
+                <img src="images/image-3.jpg" class='image-round' alt="images-3">
             </div>
             <div class="col-4">
-                <img src="images/image-4.jpg" alt="images-4">
+                <img src="images/image-4.jpg" class='image-round' alt="images-4">
             </div>
             <div class="col-4">
-                <img src="images/image-5.jpg" alt="images-5">
+                <img src="images/image-5.jpg" class='image-round' alt="images-5">
             </div>
             <div class="col-4">
                 <img src="images/image-6.jpg" alt="images-6">
@@ -127,12 +127,13 @@
         </div>
 
     </div>
-    <div id="contact" class="bg-color" style="background: #024B8F ;">
+    <div id="contact" class="bg-color" style="background: #024B8F ;border-radius: 20px;  box-shadow: 5px 10px 18px #888888;    ">
         <div class="small-container">
             <h1 class="h1-form">Book A Repair Expert Today</h1>
             <div class="row">
                 <div class="col-form">
-                    <form id='submit-form' method="POST" action="https://script.google.com/macros/s/AKfycbz0SSDRBhWgdxqQN9bSfmtE2oSpYSqw6Y6iKX7JlA/exec">
+                    <form id='submit-form' method="POST"
+                        action="https://script.google.com/macros/s/AKfycbz0SSDRBhWgdxqQN9bSfmtE2oSpYSqw6Y6iKX7JlA/exec">
                         <input type="text" id="name" name="name" placeholder="Name...">
 
                         <input type="number" id="phone" name="phone" placeholder="Phone Number...">
@@ -161,7 +162,7 @@
         </div>
     </div>
     <!-- ---------------------------------------   brand  --------------------------------- -->
-    <div class="small-container">
+    <div class="small-container brand">
         <div class="row">
             <div class="col-5">
                 <img src="images/logo-10.png" alt="">
@@ -200,7 +201,7 @@
                     <i class="fas fa-envelope-square mail-logo">homecareserviceorg@gmail.com</i><br>
                     <i class="fas fa-phone-square-alt">call now</i>
                 </div>
-                
+
             </div>
             <hr>
             <p class="copyright">copyright <i class="far fa-copyright"></i>homecare-Developer-cummunity</p>
@@ -208,35 +209,35 @@
     </div>
 
     <div class="fixed-call-div">
-      <a href="tel:8792635047">  <i class="fas fa-phone-alt  fixed-call " ></i></a>
+        <a href="tel:8792635047"> <i class="fas fa-phone-alt  fixed-call "></i></a>
     </div>
     <script>
 
-       var Menu=document.getElementById('menuItems')
-        Menu.style.maxHeight='0px'
+        var Menu = document.getElementById('menuItems')
+        Menu.style.maxHeight = '0px'
 
-        function MenuTooggle(){
-            if(Menu.style.maxHeight == '0px'){
-                Menu.style.maxHeight='200px'
-            }else{
+        function MenuTooggle() {
+            if (Menu.style.maxHeight == '0px') {
+                Menu.style.maxHeight = '200px'
+            } else {
 
-                Menu.style.maxHeight='0px'
+                Menu.style.maxHeight = '0px'
             }
         }
 
-        $("#submit-form").submit((e)=>{
+        $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbz0SSDRBhWgdxqQN9bSfmtE2oSpYSqw6Y6iKX7JlA/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
+                url: "https://script.google.com/macros/s/AKfycbz0SSDRBhWgdxqQN9bSfmtE2oSpYSqw6Y6iKX7JlA/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
                     alert("Form submitted successfully")
-                    
+
                 },
-                error:function (err){
+                error: function (err) {
                     alert("Something Error")
-    
+
                 }
             })
         })

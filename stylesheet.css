@@ -110,10 +110,12 @@ a{
     color: #024B8F 
 }
 .page1{
+    margin-top: 10px;
     padding: 80px 20px;
     background-color: #f9f9f9;
     padding-bottom: 0px;
     color: #024B8F;
+   
 }
 
 .welcome p{
@@ -153,6 +155,9 @@ a{
     padding: 20px 0;
 
 }
+.image-round{
+    border-radius: 21px;
+}
 .col-2 p{
     padding-top: 0;
     margin-left: 50px;
@@ -184,6 +189,12 @@ a{
     padding-left: 25px;
     padding-right: 25px;
 }
+.brand{
+    margin-top: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
 
 .col-4{
     flex: 25%;
@@ -196,6 +207,7 @@ a{
     width: 100%;
     padding: 0;
     margin: 0px;
+    border-radius: 6px;
 }
 
 /* ----------------------testimonial------------------ */
@@ -246,16 +258,19 @@ a{
     width: 100%;
     height: 40px;
     margin: 20px;
+    font-size: 18px;
+    border-radius: 5px;
 }
 textarea{
     width: 100%;
     margin: 20px;
+    font-size: 18px;
+    border-radius: 5px;
 
 }
 
 input[type=submit]{
     padding-bottom: 35px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 .submit{
     
@@ -342,8 +357,8 @@ textarea::-webkit-input-placeholder{
     display: none;
 }
 .fixed-call-div{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
     border-radius: 50%;
     background: #024B8F;
@@ -352,7 +367,12 @@ textarea::-webkit-input-placeholder{
     position: fixed;
     right: 20px;
     padding-left: 25px;
-    padding-top: 25px;
+    padding-top: 20px;
+}
+.fixed-call-div i{
+    padding-bottom: 4px;
+    padding-left: 1px;
+    
 }
 .fixed-call-div:hover{
     background: #e6e0e0cc;
@@ -408,4 +428,7 @@ nav ul li{
    
     
     
+}
+
+.bg-color{
 }

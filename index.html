@@ -228,7 +228,7 @@
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbz0SSDRBhWgdxqQN9bSfmtE2oSpYSqw6Y6iKX7JlA/exec",
+                url: "https://script.google.com/macros/s/AKfycbz9EHnQjASpfss8xo11Fho5Nfjxkd0nORRT9rRm5Q/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
@@ -239,6 +239,7 @@
                     alert("Something Error")
 
                 }
+                
             })
         })
     </script>

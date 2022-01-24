@@ -287,8 +287,11 @@ input[type=submit]{
     cursor: pointer;
     border-radius: 30px;
     list-style: none;
-    color: #024B8F;
-    background: #ffffff;
+    color: #ffffff;
+    border-style: none;
+    background-color: #024B8F;
+    box-shadow: 0px 6px 4px #888, 0px -4px 5px #888;
+
     
 }
 
@@ -361,27 +364,6 @@ textarea::-webkit-input-placeholder{
     height: 30px;
     display: none;
 }
-.fixed-call-div{
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: #024B8F;
-    color: #ffffff;
-    bottom: 20px;
-    position: fixed;
-    right: 20px;
-    padding-left: 25px;
-    padding-top: 20px;
-}
-.fixed-call-div i{
-    padding-bottom: 4px;
-    padding-left: 1px;
-    
-}
-.fixed-call-div:hover{
-    background: #e6e0e0cc;
-}
 
 /* ---------------------------------------- mobile-divece--------------------------------------- */
 @media only screen and (max-width:600px) {
@@ -435,5 +417,51 @@ nav ul li{
     
 }
 
-.bg-color{
+
+/* *******************call button********************* */
+.call_div{
+    margin: 25px;
+    width: 180px;
+
+    
+}
+.form_call_div{
+    margin: 25px;
+    width: 180px;
+    box-shadow: 0px 6px 4px #888, 0px -4px 5px #888;
+    border-radius: 12px;
+
+}
+.call_container{
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 12px;
+
+ 
+    background-color: #024B8F;
+
+}
+.call_container:hover{
+    background-color: #e6e0e0cc;
+}
+.fixed-call-div{
+   height: 50px;
+   width: 50px;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   
+}
+.fixed_call_container{
+   height: 50px;
+    text-align: center;
+    background-color: #024B8F;
+   border-radius: 50%;
+}
+.fixed_call_logo{
+    padding-top: 14px;
+}
+
+.fixed_call_container:hover{
+    background: #e6e0e0cc;
 }

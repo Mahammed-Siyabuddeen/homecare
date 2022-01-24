@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z15XQZZVVF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-Z15XQZZVVF');
-</script>
     <link rel="icon" href="./favicon.ico">
     <meta charset="UTF-8">
     <!-- meta edge -->
@@ -18,14 +10,15 @@
     <!-- meta view port -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITLE -->
-    <title>Washing Machine Repair and  Service </title>
+    <title>Washing Machine Repair and Service </title>
     <!-- meta Description -->
     <meta name="description" content="Paircare service center specializing in all types
     of washing machine repair services. With rich experience and expertise in the field,
     we are able to repair all brands of the washing machine and almost all models of the
-    washing machine"> 
-     <!-- meta keyword -->
-     <meta name="keywords" content="washing machine repair, washing machine repair near me, washing machine servicing, washing machine servicing near me,samsung washing machine servicing,whirlpool washing machine servicing">
+    washing machine">
+    <!-- meta keyword -->
+    <meta name="keywords"
+        content="washing machine repair, washing machine repair near me, washing machine servicing, washing machine servicing near me,samsung washing machine servicing,whirlpool washing machine servicing">
     <!-- meta author -->
     <meta name="author" content="mahammed siyabuddeen">
 
@@ -41,8 +34,8 @@
     <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
 </head>
 
 
@@ -59,8 +52,8 @@
             <ul id="menuItems">
                 <li> <a href="#header">home</a> </li>
                 <li><a href="#contact">contact</a></li>
-
-
+                <li><a href="#about">about</a></li>
+                <li><a href="#testimonial">testimonial</a></li>
 
             </ul>
         </nav>
@@ -79,10 +72,15 @@
                     we are able to repair all brands of the washing machine and almost all models of the
                     washing machine.
                 </p>
-                <a href="tel:8792635047">
+                <div class="call_div">
+                    <div class="call_container">
+                        <div class="banner_call">
+                            <a href="tel:8792635047"><i class="fas fa-phone-alt "> Call Now</i></a>
 
-                    <i class="fas fa-phone-alt call"> Call Now</i>
-                </a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -106,8 +104,9 @@
     </div>
 
     <!-- -------------------------------about --------------------------- -->
-    <div class="bg-color" style="border-radius:20px ;  border-radius: 10px;margin-top: 5px; box-shadow: 5px 10px 18px #888888;">
-        <div class="container">
+    <div class="bg-color"
+        style="border-radius:20px ;  border-radius: 10px;margin-top: 5px; box-shadow: 5px 10px 18px #888888;">
+        <div id="about" class="container">
             <h2 class="about-title">About</h2>
             <div class="row">
                 <div class="col-2">
@@ -133,7 +132,7 @@
         </div>
     </div>
 
-    <div class="small-container">
+    <div id="testimonial" class="small-container">
         <h2 class="testimonial-title">testimonial</h2>
         <div class="row">
             <div class="col-4">
@@ -158,7 +157,8 @@
         </div>
 
     </div>
-    <div id="contact" class="bg-color" style="background: #024B8F ;border-radius: 20px;  box-shadow: 5px 10px 18px #888888;    ">
+    <div id="contact" class="bg-color"
+        style="background: #024B8F ;border-radius: 20px;  box-shadow: 5px 10px 18px #888888;    ">
         <div class="small-container">
             <h1 class="h1-form">Book A Repair Expert Today</h1>
             <div class="row">
@@ -183,10 +183,14 @@
                         Our professionals are represented considerable authority in Washing Machine Repair
                         Services giving the best client care.
                     </p>
-                    <div class="form-call">
-                        <a href="tel:8792635047">
-                            <i class="fas fa-phone-alt call"> Call Now</i>
-                        </a>
+                    <div class="form_call_div">
+                        <div class="call_container">
+                            <div class="banner_call">
+                                <a href="tel:8792635047"><i class="fas fa-phone-alt "> Call Now</i></a>
+    
+    
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,7 +244,12 @@
     </div>
 
     <div class="fixed-call-div">
-        <a href="tel:8792635047"> <i class="fas fa-phone-alt  fixed-call "></i></a>
+        <div  class="fixed_call_container">
+            <div class="fixed_call_logo">
+                <a href="tel:8792635047"> <i class="fas fa-phone-alt  "></i></a>
+            </div>
+        </div>
+
     </div>
     <script>
 
@@ -255,11 +264,10 @@
                 Menu.style.maxHeight = '0px'
             }
         }
-
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbzh7Aw_cq1oFB1WJnxB1R5eZL1ZTokcsZWgtxTClL4bM3vr-xTU/exec",
+                url: " https://script.google.com/macros/s/AKfycbzh7Aw_cq1oFB1WJnxB1R5eZL1ZTokcsZWgtxTClL4bM3vr-xTU/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
@@ -270,7 +278,7 @@
                     alert("Something Error")
 
                 }
-                
+
             })
         })
     </script>

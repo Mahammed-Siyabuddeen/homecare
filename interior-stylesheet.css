@@ -18,6 +18,7 @@ margin: 0;
     display: flex;
     box-shadow: 1px 2px 3px 0px #ccc;
     /* place-items: center; */
+    width: 100%;
 }
 .navbar-logo >img{
     height:100%;

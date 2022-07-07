@@ -1,12 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" href="interior-stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello this  i s Interior Designer Service Page
-</body>
+  </head>
+  <body>
+    <div class="fixed-call" onclick="location.href=' tel:8792635047'">
+      <i
+        class="fa fa-phone"
+        style="
+          font-size: 28px;
+          color: #fff;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      ></i>
+    </div>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="./interior-images/logo.png" />
+      </div>
+      <div class="navbar-actions">
+        <a class="mobile-number" href="tel:9741700839">+91 9741 700839</a>
+        <a
+          href="https://wa.me/9741700839?text=I`m%20intrested%20in%20your%20interior%20services"
+          ><img src="./interior-images/WhatsApp.svg.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div class="slider">
+      <img src="./interior-images/bedroom-interior-design-.jpg" alt="" />
+      <p id="arrow-left" onclick="changeSlider(-1)"><</p>
+      <p id="arrow-right" onclick="changeSlider(1)">></p>
+    </div>
+
+    <div class="slider">
+      <img
+        src="./interior-images/design-cafe-ecommerce-store-home-decor-lighting-interiors-d.jpg"
+        alt=""
+      />
+      <p id="arrow-left" onclick="changeSlider(-1)"><</p>
+      <p id="arrow-right" onclick="changeSlider(1)">></p>
+    </div>
+
+    <div class="slider">
+      <img
+        src="./interior-images/home-interiors-best-interior-designs-studio-india-2dhp.14.06.2022-1.jpg"
+        alt=""
+      />
+      <p id="arrow-left" onclick="changeSlider(-1)"><</p>
+      <p id="arrow-right" onclick="changeSlider(1)">></p>
+    </div>
+    <div class="slider">
+      <img
+        src="./interior-images/interior-firms-in-bangalore-946x662.jpg"
+        alt=""
+      />
+      <p id="arrow-left" onclick="changeSlider(-1)"><</p>
+      <p id="arrow-right" onclick="changeSlider(1)">></p>
+    </div>
+    <div class="slider">
+      <img
+        src="./interior-images/home-interiors-space-saving-3dhp.14.06.2022.jpg"
+        alt=""
+      />
+      <p id="arrow-left" onclick="changeSlider(-1)"><</p>
+      <p id="arrow-right" onclick="changeSlider(1)">></p>
+    </div>
+   
+    <div class="slider">
+      <img
+        src="./interior-images/Shabby Chic Interior Design Style.webp"
+        alt=""
+      />
+      <p id="arrow-left" onclick="changeSlider(-1)"><</p>
+      <p id="arrow-right" onclick="changeSlider(1)">></p>
+    </div>
+  
+
+
+
+    <!-- form -->
+    <div class="form-container">
+      <div class="form-heading">
+        <h1>Schedule for a designer consultation</h1>
+        <p>
+          We bring you creative home design products that work together
+          beautifully to form inspired living spaces.
+        </p>
+      </div>
+      <form id="form" onsubmit="handlesubmit(event)">
+        <input required type="text" name="name" placeholder="name" />
+        <br />
+        <input
+          type="tel"
+          name="phoneNumber"
+          placeholder="phone number"
+          pattern="[0-9]{10}"
+          required
+        />
+        <br />
+        <input type="text" name="address" placeholder="Address" />
+        <br />
+        <input type="text" name="details" placeholder="says what you need?" />
+        <div
+          class="action-buttons"
+          style="display: flex; justify-content: space-evenly"
+        >
+          <button class="submit-button" type="submit">Send</button>
+          <button
+            class="submit-button"
+            onclick="location.href='tel:8792635047'"
+          >
+            <i class="fa fa-phone" style="font-size: 26px"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="about">
+      <div class="about-image">
+        <img
+          src="./interior-images/logo.png"
+          alt="paircare-logo"
+          title="paircare-interior"
+        />
+      </div>
+      <div class="about-content">
+        <h1>About Paircare</h1>
+        <p>
+          About Homezinterio At Homezinterio we believe that interior design is
+          more than great functionality and beautiful aesthetics. We aim to make
+          your home interiors a reflection of your personality. Your home should
+          be something that you and your family take pride in and love to spend
+          time in. Our efficient, customized home interior designs incorporate
+          your needs in every nook of your home, so your space meets your every
+          requirement. Our dedicated home interior designers work with you
+          tirelessly to tie your style with their design expertise, creating the
+          perfect interior design plan. They will also ensure that the plan is
+          executed using the materials of the highest standards. In addition to
+          great interior design ideas, you can expect our unwavering support and
+          service
+        </p>
+      </div>
+    </div>
+
+    <div class="projects-container">
+      <h1>Paircare Projects</h1>
+
+      <div class="projects">
+        <div class="project">
+          <img src="./interior-images/kitchen.png" alt="" />
+          <p style="">Home Interior</p>
+        </div>
+        <div class="project">
+          <img src="./interior-images/wall painting.png" alt="" />
+          <p style="">Wall Painting</p>
+        </div>
+        <div class="project">
+          <img src="./interior-images/decoratingX.jpg" alt="" />
+          <p style="">Decorating</p>
+        </div>
+        <div class="project">
+          <img src="./interior-images/Home.png" alt="" />
+          <p id="kit" style="">kitchen</p>
+        </div>
+      </div>
+    </div>
+
+ <!--------------------services  -------------------->
+ <div class="service-container">
+
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Art deco Interior Design Style.webp"
+          alt=""
+        />
+        <p>Art deco Interior Design</p>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Asian Decor Design.webp"
+          alt=""
+        />
+        <p>Art deco Interior Design</p>
+    </div>
+  </div>
+
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Coastal Interior Design Style.webp"
+          alt=""
+        />
+        <p>Art deco Interior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/contemporary-interior-design-004.webp"
+          alt=""
+        />
+        <p>contemporary interior design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/decorating.jpg"
+          alt=""
+        />
+        <p>decorating Interior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/decorating2.jpg"
+          alt=""
+        />
+        <p>decorating Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Farmhouse Interior Design Style.webp"
+          alt=""
+        />
+        <p>FarmhouseInterior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/home interior.jpg"
+          alt=""
+        />
+        <p>Home Interior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Mediterranean-Style-Interior-Design.jpg"
+          alt=""
+        />
+        <p>Mediterranean-Style Interior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Minimalist Interior Design Style0.webp"
+          alt=""
+        />
+        <p>Minimalist Interior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/modern-bedroom-wardrobe.jpg"
+          alt=""
+        />
+        <p>modern-bedroom-wardrobe</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Modern-mid-century-living-room-interior-design.webp"
+          alt=""
+        />
+        <p>Modern mid-century living room Interior Design</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Rustic Interior Design Style.webp"
+          alt=""
+        />
+        <p>Rustic Interior Design Style</p>
+    </div>
+  </div>
+    <div class="services">
+      <div class="service-type-content">
+        <img
+          src="./interior-images/gallery/Traditional Interior Design Style.webp"
+          alt=""
+        />
+        <p>Traditional Interior Design Style</p>
+    </div>
+    </div>
+ </div>
+     <div class="footer">
+       <p onclick="location.href='tel:9741700839'"> <i class="fa fa-phone" style="font-size: 28px;color: #fff;margin-right:10px;"></i>  +91 9741 700839</p>
+     </div>
+
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function handlesubmit(e){
+        e.preventDefault()
+        let form=$(e)
+        console.log('hello : ',form.serialize());
+        var per={
+          name:$('input[name="name"]').val(),
+          phoneNumber:$('input[name="phoneNumber"]').val(),
+          address:$('input[name="address"]').val(),
+          details:$('input[name="details"]').val(),
+        }
+
+        $.ajax({
+          url:'https://ntlflix.herokuapp.com/sendmail',
+          type:'POST',
+          dataType:'json',
+          contentType:'application/json',
+          success:function (data){
+            alert(" succussfully send call you back ")
+            console.log(data)
+          },
+          error:()=>{
+             (
+              location.href="tel:9741700839"
+             )
+          },
+          data:JSON.stringify(per),
+        }).then(()=>{
+          $('input[name="name"]').val(''),
+          $('input[name="phoneNumber"]').val(''),
+          $('input[name="address"]').val(''),
+          $('input[name="details"]').val('')
+        })
+    }
+
+    var currentSlider = 1;
+    showSlider();
+    function showSlider() {
+      var images = document.getElementsByClassName("slider");
+      for (i = 0; i < images.length; i++) images[i].style.display = "none";
+
+      if (currentSlider > images.length) currentSlider = 1;
+      if (currentSlider < 1) currentSlider = images.length;
+      images[currentSlider - 1].style.display = "block";
+    }
+
+    function changeSlider(n) {
+      currentSlider += n;
+      showSlider();
+    }
+  </script>
 </html>

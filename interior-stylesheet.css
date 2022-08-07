@@ -1,7 +1,8 @@
-*{
-margin: 0;
+* {
+    margin: 0;
 }
-.fixed-call{
+
+.fixed-call {
     position: fixed;
     right: 10px;
     top: 70%;
@@ -13,70 +14,82 @@ margin: 0;
     place-items: center;
 }
 
-.navbar{
+.navbar {
     height: 100px;
     display: flex;
     box-shadow: 1px 2px 3px 0px #ccc;
     /* place-items: center; */
     width: 100%;
 }
-.navbar-logo >img{
-    height:100%;
+
+.navbar-logo>img {
+    height: 100%;
 }
-.mobile-number{
+
+.mobile-number {
     text-decoration: none;
     color: #4f4fc7;
     font-size: 30px;
     font-weight: bold;
     margin-right: 30px;
 }
-.navbar-actions{
+
+.navbar-actions {
     margin-left: auto;
     padding: 10px;
     display: flex;
     place-items: center;
 }
-.navbar-actions>a>img{
+
+.navbar-actions>a>img {
     width: 70px;
 }
-.slider{
+
+.slider {
     height: 450px;
 }
-.slider >img{
+
+.slider>img {
     width: 100%;
     height: 100%;
 }
-.slider >p{
-   font-size: 90px;
-   font-weight: bolder;
-   color: #4f4fc7;
-   position: absolute;
-   top: 55%; 
+
+.slider>p {
+    font-size: 90px;
+    font-weight: bolder;
+    color: #4f4fc7;
+    position: absolute;
+    top: 55%;
 }
 
-#arrow-right{
+#arrow-right {
     right: 2%;
 }
-#arrow-left{
+
+#arrow-left {
     left: 2%;
 }
-.form-container{
-    margin: 3% auto;    
+
+.form-container {
+    margin: 3% auto;
     width: 95%;
-    min-height: 500px ;
+    min-height: 500px;
     place-items: center;
     display: flex;
     justify-content: space-evenly;
     background: #dbdada;
     box-shadow: 1px 6px 2px 2px #ccc;
 }
-form{
+
+form {
     margin-left: auto;
     margin-right: auto;
     flex: .7;
 
 }
-input[type=text],input[type=tel]{
+
+input[type=text],
+input[type=tel] {
     width: 95%;
     background-color: #f8f7f7;
     margin-top: 2%;
@@ -86,9 +99,10 @@ input[type=text],input[type=tel]{
     padding: 5px;
     font-size: 17px;
     color: #000;
-    
+
 }
-.submit-button{
+
+.submit-button {
     width: 30%;
     height: 50px;
     border: none;
@@ -99,19 +113,21 @@ input[type=text],input[type=tel]{
     color: #fff;
     font-size: medium;
     font-weight: bolder;
-    
+
 }
 
-.form-heading{
+.form-heading {
     padding: 30px;
-    flex:.3
+    flex: .3
 }
-.form-heading>p{
+
+.form-heading>p {
     padding: 10px;
     padding-left: 0;
-    color:#888
+    color: #888
 }
-.about{
+
+.about {
     /* margin-bottom: 20px; */
     /* padding: 30px; */
     margin-left: auto;
@@ -120,11 +136,11 @@ input[type=text],input[type=tel]{
     display: flex;
     place-items: center;
     box-shadow: 4px 3px 5px 4px #ccc;
-    
+
 }
 
 
-.about-content{
+.about-content {
     word-spacing: 9px;
     line-height: 25px;
     font-size: 16px;
@@ -132,40 +148,48 @@ input[type=text],input[type=tel]{
     box-shadow: 1px 3px 4px 1px #ccc;
     padding: 10px;
 }
- .about-content>h1{
+
+.about-content>h1 {
     padding: 10px;
-  
+
 }
-.about-content >p{
+
+.about-content>p {
     word-spacing: 9px;
     font-size: 16px;
     color: #888;
-} 
-.projects-container{
+}
+
+.projects-container {
     text-align: center;
 }
-.projects-container>h1{
+
+.projects-container>h1 {
     margin-top: 5%;
     margin-bottom: 6%;
 }
-.projects{
+
+.projects {
     display: flex;
     justify-content: space-evenly;
-    /* height: 400px; */
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
-.project{
-   flex: 2.5;
-   margin: 10px;
+
+.project {
+    flex: 2.5;
+    margin: 10px;
 }
-.project>img{
+
+.project>img {
     width: 100%;
     height: 75%;
     object-fit: cover;
 }
-.project >p{
+
+.project>p {
     width: 100%;
     height: 10%;
     background-color: #ebebeb;
@@ -176,18 +200,21 @@ input[type=text],input[type=tel]{
     text-align: center;
     transition: 3s;
 }
-.service-container{
+
+.service-container {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     height: 600px;
 }
-.services{
+
+.services {
     text-align: center;
     min-width: 100%;
-   
+
 }
-.service-type-content >p{
+
+.service-type-content>p {
     position: relative;
     top: -200px;
     color: #fff;
@@ -196,84 +223,145 @@ input[type=text],input[type=tel]{
     margin-right: auto;
     width: 40%;
     font-size: 40px;
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.service-type-content>img{
+
+.service-type-content>img {
     width: 100%;
     max-height: 600px;
 
 }
 
-.project:hover{
+.project:hover {
     transform: scale(1.1);
 }
 
 
-.footer{
+.footer {
     background-color: #000;
     text-align: center;
     display: flex;
     height: 50px;
 }
-.footer>p{
+
+.footer>p {
     color: #fff;
     margin: auto;
 }
 
-button:hover, .slider >p:hover, .fixed-call:hover,.footer>p {
+button:hover,
+.slider>p:hover,
+.fixed-call:hover,
+.footer>p {
     cursor: pointer;
 }
-@media only screen  and (max-width:600px){
-    .navbar{
+
+
+/*******************************for only use refrigarator router  *******************************/
+.change-color {
+    background-color: #2d79bf;
+}
+
+.change-color-p {
+    color: #2d79bf;
+}
+
+.change-color-p>p {
+    color: #2d79bf;
+}
+
+.fact-area {
+    padding: 0 3%;
+    background-color: #2d79bf;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.fact {
+    margin: 20px;
+}
+
+@media only screen and (min-width:800px) {
+
+    .refrigerator-navbar {
+        height: 600px;
+
+    }
+}
+
+/************************** mobile device styles**************************/
+@media only screen and (max-width:600px) {
+    .navbar {
         height: 80px;
     }
-    .mobile-number{
+
+    .mobile-number {
         font-size: 15px;
         margin-right: 10px !important;
     }
-    .navbar-actions>a>img{
+
+    .navbar-actions>a>img {
         width: 40px;
     }
-    .slider{
+
+    .slider {
         height: auto;
     }
-    .slider>p{
+
+    .slider>p {
         top: 20%;
     }
-        .projects{
-            flex-direction: column;
-            /* margin: 10%; */
-            width: fit-content;
+
+    .projects {
+        flex-direction: column;
+        /* margin: 10%; */
+        width: fit-content;
         justify-content: inherit;
 
-        }
-        .project:hover{
-            transform: scale(1);
-        }
-        .project>p{
-            padding-bottom:20px ;
-        }
-        .about{
-            flex-direction: column;
-        }
-        .form-container{
-            flex-direction: column;
-        }
-        
-        .about-image >img{
-            width: 100%;
-        }
-        .service-container{
-            height: 300px;
-        }
-        .service-type-content>p{
-            padding: 20px;
-            font-size: 30px;
-            top: -180px;
-        }
-        .service-type-content>img{
-            height: 300px;
-        
-        }
-      
-} 
+    }
+
+    .project:hover {
+        transform: scale(1);
+    }
+
+    .project>p {
+        padding-bottom: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .about-image>img {
+        width: 100%;
+    }
+
+    .service-container {
+        height: 300px;
+    }
+
+    .service-type-content>p {
+        padding: 20px;
+        font-size: 30px;
+        top: -180px;
+    }
+
+    .service-type-content>img {
+        height: 300px;
+
+    }
+
+    /* refrigerator services */
+    .refrigerator-sevices-images {
+        overflow: scroll;
+        margin: 1%;
+        box-shadow: -1px 0px 5px 1px #ccc;
+        border-radius: 4%
+    }
+
+}
